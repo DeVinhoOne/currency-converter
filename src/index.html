@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Currency Converter</title>
+   </head>
+   <body>
+      <main class="app">
+         <!-- Header -->
+         <header class="header">
+            <h1 class="header__headline">Currency Converter</h1>
+         </header>
+         <!-- Form -->
+         <form class="form">
+            <div class="form__wrap">
+               <label for="amount" class="form__label">Amount</label>
+               <input type="number" class="form__input" id="amount" />
+            </div>
+            <div class="form__wrap">
+               <label for="from" class="form__label">From</label>
+               <select name="from" id="from" class="form__select">
+                  <option value="USD" class="form__option">USD</option>
+                  <option value="EUR" class="form__option">EUR</option>
+                  <option value="PLN" class="form__option">PLN</option>
+               </select>
+            </div>
+            <div class="form__wrap">
+               <label for="to" class="form__label">To</label>
+               <select name="to" id="to" class="form__select">
+                  <option value="USD" class="form__option">USD</option>
+                  <option value="EUR" class="form__option">EUR</option>
+                  <option value="PLN" class="form__option">PLN</option>
+               </select>
+            </div>
+            <button class="form__btn" type="submit">Convert</button>
+         </form>
+         <!-- Summary -->
+         <section class="summary">
+            <h3 class="summary__from-amount"></h3>
+            <p class="summary__from-currency"></p>
+            <h3 class="summary__to-amount"></h3>
+            <p class="summary__to-currency"></p>
+         </section>
+      </main>
+   </body>
+</html>
