@@ -15,6 +15,6 @@ const convertCurrency = (e) => {
       .then((data) => {
          const rate = data.rates[to]
          const result = amount * rate
-         printResult(amount, base, to, result)
+         printResult(amount, base, to, result.toFixed(2))
       })
 }
