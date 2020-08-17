@@ -15,6 +15,10 @@ const convertCurrency = (e) => {
       .then((data) => {
          const rate = data.rates[to]
          const result = amount * rate
-         printResult(amount, base, to, result.toFixed(2))
+         if (isNaN(result)) {
+            printResult(amount, base, to, amount)
+         } else {
+            printResult(amount, base, to, result.toFixed(2))
+         }
       })
 }
