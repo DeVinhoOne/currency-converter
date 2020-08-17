@@ -1,3 +1,5 @@
+import { printResult } from './print-result'
+
 const form = document.querySelector('.form')
 
 form.addEventListener('submit', (e) => convertCurrency(e))
@@ -13,6 +15,6 @@ const convertCurrency = (e) => {
       .then((data) => {
          const rate = data.rates[to]
          const result = amount * rate
-         console.log(result.toFixed(2))
+         printResult(amount, base, to, result)
       })
 }
