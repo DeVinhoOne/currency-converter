@@ -1,6 +1,5 @@
 .form {
    margin: 0 auto;
-   max-width: 400px;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -9,6 +8,10 @@
       margin-bottom: 10px;
       display: flex;
       flex-direction: column;
+
+      @media (min-width: 600px) {
+         margin-bottom: 15px;
+      }
    }
 
    &__label {
@@ -23,6 +26,11 @@
       border-radius: 2px;
       font-weight: bold;
       color: #fff;
+      cursor: pointer;
+
+      @media (min-width: 600px) {
+         padding: 15px 40px;
+      }
    }
 }
 
@@ -42,6 +50,10 @@
    color: #fff;
    background-color: transparent;
    border: 1px solid $main-focus-color;
+
+   @media (min-width: 600px) {
+      padding: 12px 18px;
+   }
 
    .form__option {
       background-color: $main-focus-color;

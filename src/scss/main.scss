@@ -1,6 +1,7 @@
 @import './utils/vars';
 @import './header';
 @import './form';
+@import './summary';
 
 *,
 *::before,
@@ -22,5 +23,7 @@ body {
 }
 
 .app {
+   margin: 0 auto;
    padding: 20px 15px;
+   max-width: 400px;
 }

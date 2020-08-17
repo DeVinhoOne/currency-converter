@@ -1,0 +1,10 @@
+.summary {
+   margin-top: 20px;
+   font-size: 2rem;
+
+   &__result {
+      font-size: 2.2rem;
+      color: $main-focus-color;
+      font-weight: bold;
+   }
+}
