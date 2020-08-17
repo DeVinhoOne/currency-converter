@@ -1,0 +1,51 @@
+.form {
+   margin: 0 auto;
+   max-width: 400px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+
+   &__wrap {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__label {
+      opacity: 0.5;
+   }
+
+   &__btn {
+      margin-top: 15px;
+      padding: 10px 30px;
+      background-color: $main-focus-color;
+      border: none;
+      border-radius: 2px;
+      font-weight: bold;
+      color: #fff;
+   }
+}
+
+// Input styles
+.form__input {
+   padding: 6px 3px;
+   background-color: transparent;
+   border: none;
+   border-bottom: 3px solid $main-focus-color;
+   color: $light-text;
+   font-size: 1.6rem;
+}
+
+// Select styles
+.form__select {
+   padding: 8px 12px;
+   color: #fff;
+   background-color: transparent;
+   border: 1px solid $main-focus-color;
+
+   .form__option {
+      background-color: $main-focus-color;
+      font-size: 1.6rem;
+      font-weight: bold;
+   }
+}
