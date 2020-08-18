@@ -7,6 +7,7 @@ form.addEventListener('submit', (e) => convertCurrency(e))
 const convertCurrency = (e) => {
    e.preventDefault()
 
+   const input = form.querySelector('#amount')
    const amount = form.querySelector('#amount').value
    const base = form.querySelector('#from').value
    const to = form.querySelector('#to').value
@@ -20,5 +21,6 @@ const convertCurrency = (e) => {
          } else {
             printResult(amount, base, to, result.toFixed(2))
          }
+         input.value = ''
       })
 }
