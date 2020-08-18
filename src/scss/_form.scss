@@ -23,13 +23,13 @@
       padding: 10px 30px;
       background-color: $main-focus-color;
       border: none;
-      border-radius: 2px;
+      border-radius: $border-radius;
       font-weight: bold;
       color: #fff;
       cursor: pointer;
 
       @media (min-width: 600px) {
-         padding: 15px 40px;
+         padding: 12px 34px;
       }
    }
 }
@@ -39,11 +39,12 @@
    padding: 6px 3px;
    background-color: transparent;
    border: none;
+   border-radius: $border-radius;
    border-bottom: 3px solid $main-focus-color;
    color: $light-text;
    font-size: 1.6rem;
    outline: none;
-   transition: background-color 0.1s ease-in-out;
+   transition: background-color $transition-dur ease-in-out;
 
    &:focus {
       background-color: rgba($main-focus-color, 0.1);
@@ -56,14 +57,23 @@
    color: #fff;
    background-color: transparent;
    border: 1px solid $main-focus-color;
+   border-radius: $border-radius;
+   outline: none;
+   transition: background-color $transition-dur ease-in-out;
+   cursor: pointer;
+
+   &:focus {
+      background-color: rgba($main-focus-color, 0.1);
+   }
 
    @media (min-width: 600px) {
-      padding: 12px 18px;
+      padding: 10px 15px;
    }
 
    .form__option {
       background-color: $main-focus-color;
       font-size: 1.6rem;
       font-weight: bold;
+      cursor: pointer;
    }
 }
