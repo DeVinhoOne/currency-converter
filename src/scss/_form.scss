@@ -27,6 +27,11 @@
    &__label {
       opacity: 0.5;
       transition: opacity $transition-dur ease-in-out;
+
+      @media (min-width: 800px) {
+         margin-bottom: 3px;
+         font-size: 1.7rem;
+      }
    }
 
    &__btn {
@@ -41,6 +46,11 @@
 
       @media (min-width: 600px) {
          padding: 12px 34px;
+      }
+
+      @media (min-width: 800px) {
+         font-size: 1.8rem;
+         padding: 16px 40px;
       }
    }
 }
@@ -57,6 +67,12 @@
    font-size: 1.6rem;
    outline: none;
    transition: background-color $transition-dur ease-in-out;
+
+   @media (min-width: 800px) {
+      padding: 9px 5px;
+      font-size: 1.8rem;
+      width: 300px;
+   }
 }
 
 // Select styles
@@ -75,10 +91,19 @@
       padding: 10px 15px;
    }
 
+   @media (min-width: 800px) {
+      padding: 15px 25px;
+      border: 2px solid $main-focus-color;
+   }
+
    .form__option {
       background-color: $main-focus-color;
       font-size: 1.6rem;
       font-weight: bold;
       cursor: pointer;
+
+      @media (min-width: 800px) {
+         font-size: 1.8rem;
+      }
    }
 }

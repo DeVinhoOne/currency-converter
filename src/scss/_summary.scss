@@ -2,9 +2,18 @@
    margin-top: 20px;
    font-size: 2rem;
 
+   @media (min-width: 800) {
+      margin-top: 30px;
+      font-size: 2.3rem;
+   }
+
    &__result {
       font-size: 2.2rem;
       color: $main-focus-color;
       font-weight: bold;
+
+      @media (min-width: 800px) {
+         font-size: 2.5rem;
+      }
    }
 }

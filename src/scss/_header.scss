@@ -1,8 +1,16 @@
 .header {
    margin-bottom: 30px;
 
+   @media (min-width: 800px) {
+      margin-bottom: 40px;
+   }
+
    &__headline {
       font-weight: 400;
       text-align: center;
+
+      @media (min-width: 800px) {
+         font-size: 3.8rem;
+      }
    }
 }
