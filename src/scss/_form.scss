@@ -1,3 +1,13 @@
+@mixin on-focus {
+   &:focus {
+      background-color: rgba($main-focus-color, 0.1);
+   }
+
+   &:focus + .form__label {
+      opacity: 0.9;
+   }
+}
+
 .form {
    margin: 0 auto;
    display: flex;
@@ -7,7 +17,7 @@
    &__wrap {
       margin-bottom: 10px;
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
 
       @media (min-width: 600px) {
          margin-bottom: 15px;
@@ -16,6 +26,7 @@
 
    &__label {
       opacity: 0.5;
+      transition: opacity $transition-dur ease-in-out;
    }
 
    &__btn {
@@ -36,6 +47,7 @@
 
 // Input styles
 .form__input {
+   @include on-focus;
    padding: 6px 3px;
    background-color: transparent;
    border: none;
@@ -45,14 +57,11 @@
    font-size: 1.6rem;
    outline: none;
    transition: background-color $transition-dur ease-in-out;
-
-   &:focus {
-      background-color: rgba($main-focus-color, 0.1);
-   }
 }
 
 // Select styles
 .form__select {
+   @include on-focus;
    padding: 8px 12px;
    color: #fff;
    background-color: transparent;
@@ -61,10 +70,6 @@
    outline: none;
    transition: background-color $transition-dur ease-in-out;
    cursor: pointer;
-
-   &:focus {
-      background-color: rgba($main-focus-color, 0.1);
-   }
 
    @media (min-width: 600px) {
       padding: 10px 15px;
