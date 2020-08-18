@@ -5,12 +5,20 @@
       margin-bottom: 40px;
    }
 
+   @media (min-width: 1000px) {
+      margin-bottom: 50px;
+   }
+
    &__headline {
       font-weight: 400;
       text-align: center;
 
       @media (min-width: 800px) {
          font-size: 3.8rem;
+      }
+
+      @media (min-width: 1000px) {
+         font-size: 4.2rem;
       }
    }
 }
