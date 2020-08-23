@@ -1,4 +1,6 @@
 .summary {
+   display: flex;
+   align-items: center;
    margin-top: 20px;
    font-size: 2rem;
 
@@ -24,5 +26,12 @@
       @media (min-width: 1000px) {
          font-size: 3rem;
       }
+   }
+
+   &__arrow {
+      display: none;
+      margin: 0 15px;
+      width: 42px;
+      fill: $main-focus-color;
    }
 }
