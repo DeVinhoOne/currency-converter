@@ -1,0 +1,16 @@
+.footer {
+   font-size: 1.2rem;
+   flex-shrink: 0;
+   text-align: center;
+
+   &__desc {
+      margin: 10px;
+   }
+
+   &__link {
+      color: $main-focus-color;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3rem;
+   }
+}
