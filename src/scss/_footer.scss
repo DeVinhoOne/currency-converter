@@ -1,0 +1,44 @@
+.footer {
+   font-size: 1.2rem;
+   flex-shrink: 0;
+   text-align: center;
+
+   @media (min-width: 600px) {
+      font-size: 1.4rem;
+   }
+
+   @media (min-width: 800px) {
+      font-size: 1.5rem;
+   }
+
+   @media (min-width: 1000px) {
+      font-size: 1.7rem;
+   }
+
+   &__desc {
+      margin: 10px 0;
+
+      @media (min-width: 800px) {
+         margin: 15px 0;
+      }
+   }
+
+   &__link {
+      color: $main-focus-color;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3rem;
+
+      @media (min-width: 600px) {
+         font-size: 1.5rem;
+      }
+
+      @media (min-width: 800px) {
+         font-size: 1.6rem;
+      }
+
+      @media (min-width: 1000px) {
+         font-size: 1.8rem;
+      }
+   }
+}
